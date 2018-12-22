@@ -1,6 +1,0 @@
-D:\MyFirstService\MyFirstService\obj\Debug\MyFirstService.exe
-D:\MyFirstService\MyFirstService\obj\Debug\MyFirstService.pdb
-D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe.config
-D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe
-D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.pdb
-D:\MyFirstService\MyFirstService\obj\Debug\SQLBackUpService.csprojResolveAssemblyReference.cache
