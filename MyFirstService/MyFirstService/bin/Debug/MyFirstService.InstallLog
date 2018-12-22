@@ -1,0 +1,214 @@
+﻿Выполняется установка сборки 'D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe
+   logfile = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.InstallLog
+Устанавливается служба MyFirstService...
+Служба MyFirstService успешно установлена.
+Создается исходный EventLog MyFirstService в журнале Application...
+Выполняется фиксация сборки 'D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe
+   logfile = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.InstallLog
+Выполняется удаление сборки 'D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe
+   logfile = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.InstallLog
+Выполняется удаление источника EventLog MyFirstService.
+Выполняется удаление службы MyFirstService из системы...
+Служба MyFirstService успешно удалена из системы.
+Выполняется установка сборки 'D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe
+   logfile = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.InstallLog
+Устанавливается служба Service1...
+Служба Service1 успешно установлена.
+Создается исходный EventLog Service1 в журнале Application...
+Выполняется фиксация сборки 'D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe
+   logfile = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.InstallLog
+Выполняется удаление сборки 'D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe
+   logfile = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.InstallLog
+Выполняется удаление источника EventLog Service1.
+Выполняется удаление службы Service1 из системы...
+Служба Service1 успешно удалена из системы.
+Выполняется установка сборки 'D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe
+   logfile = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.InstallLog
+Устанавливается служба Service1...
+Служба Service1 успешно установлена.
+Создается исходный EventLog Service1 в журнале Application...
+Выполняется фиксация сборки 'D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe
+   logfile = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.InstallLog
+Выполняется удаление сборки 'D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe
+   logfile = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.InstallLog
+Выполняется удаление источника EventLog Service1.
+Выполняется удаление службы Service1 из системы...
+Служба Service1 успешно удалена из системы.
+Выполняется установка сборки 'D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe
+   logfile = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.InstallLog
+Устанавливается служба Service1...
+Служба Service1 успешно установлена.
+Создается исходный EventLog Service1 в журнале Application...
+Выполняется фиксация сборки 'D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe
+   logfile = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.InstallLog
+Выполняется удаление сборки 'D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe
+   logfile = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.InstallLog
+Выполняется удаление источника EventLog Service1.
+Выполняется удаление службы Service1 из системы...
+Служба Service1 успешно удалена из системы.
+Выполняется установка сборки 'D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe
+   logfile = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.InstallLog
+Устанавливается служба Service1...
+Служба Service1 успешно установлена.
+Создается исходный EventLog Service1 в журнале Application...
+Выполняется фиксация сборки 'D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe
+   logfile = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.InstallLog
+Выполняется удаление сборки 'D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe
+   logfile = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.InstallLog
+Выполняется удаление источника EventLog Service1.
+Выполняется удаление службы Service1 из системы...
+Служба Service1 успешно удалена из системы.
+Выполняется установка сборки 'D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe
+   logfile = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.InstallLog
+Устанавливается служба Service1...
+Служба Service1 успешно установлена.
+Создается исходный EventLog Service1 в журнале Application...
+Выполняется фиксация сборки 'D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe
+   logfile = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.InstallLog
+Выполняется удаление сборки 'D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe
+   logfile = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.InstallLog
+Выполняется удаление источника EventLog Service1.
+Выполняется удаление службы Service1 из системы...
+Служба Service1 успешно удалена из системы.
+Выполняется установка сборки 'D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe
+   logfile = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.InstallLog
+Устанавливается служба Service1...
+Служба Service1 успешно установлена.
+Создается исходный EventLog Service1 в журнале Application...
+Выполняется фиксация сборки 'D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe
+   logfile = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.InstallLog
+Выполняется удаление сборки 'D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe
+   logfile = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.InstallLog
+Выполняется удаление источника EventLog Service1.
+Выполняется удаление службы Service1 из системы...
+Служба Service1 успешно удалена из системы.
+Попытка останова службы Service1.
+Выполняется установка сборки 'D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe
+   logfile = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.InstallLog
+Устанавливается служба Service1...
+Служба Service1 успешно установлена.
+Создается исходный EventLog Service1 в журнале Application...
+Выполняется фиксация сборки 'D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe
+   logfile = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.InstallLog
+Выполняется удаление сборки 'D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe
+   logfile = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.InstallLog
+Выполняется удаление источника EventLog BackUpSQL.
+Предупреждение. Источник BackUpSQL не зарегистрирован на локальном компьютере.
+Выполняется удаление службы BackUpSQL из системы...
+При выполнении программы установки System.ServiceProcess.ServiceInstaller во время установки возникло исключение.
+System.ComponentModel.Win32Exception: Указанная служба не установлена
+При удалении из системы возникло исключение. Это исключение будет проигнорировано, и удаление из системы будет продолжено. Однако после завершения удаления данное приложение может оказаться не полностью удаленным.
+Выполняется удаление сборки 'D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe
+   logfile = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.InstallLog
+Выполняется удаление источника EventLog Service1.
+Выполняется удаление службы Service1 из системы...
+Служба Service1 успешно удалена из системы.
+Выполняется установка сборки 'D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe
+   logfile = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.InstallLog
+Устанавливается служба BackUpSQL...
+Служба BackUpSQL успешно установлена.
+Создается исходный EventLog BackUpSQL в журнале Application...
+Выполняется фиксация сборки 'D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe
+   logfile = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.InstallLog
+Выполняется удаление сборки 'D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe
+   logfile = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.InstallLog
+Выполняется удаление источника EventLog BackUpSQL.
+Выполняется удаление службы BackUpSQL из системы...
+Служба BackUpSQL успешно удалена из системы.
+Выполняется установка сборки 'D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe
+   logfile = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.InstallLog
+Устанавливается служба BackUpSQL...
+Служба BackUpSQL успешно установлена.
+Создается исходный EventLog BackUpSQL в журнале Application...
+Выполняется фиксация сборки 'D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe
+   logfile = D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.InstallLog

@@ -1,0 +1,11 @@
+D:\C# (11.12.2018)\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe.config
+D:\C# (11.12.2018)\MyFirstService\MyFirstService\obj\Debug\MyFirstService.csprojResolveAssemblyReference.cache
+D:\C# (11.12.2018)\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe
+D:\C# (11.12.2018)\MyFirstService\MyFirstService\bin\Debug\MyFirstService.pdb
+D:\C# (11.12.2018)\MyFirstService\MyFirstService\obj\Debug\MyFirstService.exe
+D:\C# (11.12.2018)\MyFirstService\MyFirstService\obj\Debug\MyFirstService.pdb
+D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe.config
+D:\MyFirstService\MyFirstService\obj\Debug\MyFirstService.exe
+D:\MyFirstService\MyFirstService\obj\Debug\MyFirstService.pdb
+D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.exe
+D:\MyFirstService\MyFirstService\bin\Debug\MyFirstService.pdb
