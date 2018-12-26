@@ -1,17 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics;
-using System.Linq;
 using System.ServiceProcess;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
 using System.Data.SqlClient;
 using System.Threading;
-using System.Windows.Forms;
-using System.Reflection.Emit;
 using MyFirstService.Properties;
 
 
@@ -45,41 +37,57 @@ namespace SQLBackUpService
         private void addToDirectory(object obj)
         {
             var dtn = DateTime.Now;
-            var dto = new DateTime(2017, 10, 10, 12, 02, 0);
-            var dte = new DateTime(2017, 10, 10, 12, 15, 0);
-            if (dtn.TimeOfDay > dto.TimeOfDay && dtn.TimeOfDay < dte.TimeOfDay)
+            if (dtn.Hour==12 && dtn.Minute<=15)
             {       string path= Settings.Default.path;
                     string userid = Settings.Default.UserId;
                     string pas = Settings.Default.Password;
                     string dbname = Settings.Default.DBName;
                     string serverename = Settings.Default.ServerName;
-                    string directoryname = path + @"\" + dbname + "_" + DateTime.Today.ToString().Split(' ')[0];
+                    string directoryname = path + @"\" + "backup" + "_" + DateTime.Today.ToString().Split(' ')[0];
+
+                if (!Directory.Exists(path))
+                {
+                    Directory.CreateDirectory(path);
+                }
                 try
                 {
                     if (!Directory.Exists(directoryname))
                     {
                         Directory.CreateDirectory(directoryname);
-                        string connect = 
-                            (String.Format(@"Data Source={0};Initial Catalog={1};Persist Security Info=True;User ID={2};Password={3}",serverename,dbname,userid,pas)
-                            );
+                        string connect =
+                            String.Format(@"Data Source={0};Initial Catalog={1};Persist Security Info=True;User ID={2};Password={3}",
+                                serverename, dbname, userid, pas);
 
                         using (SqlConnection connection = new SqlConnection(connect))
                         {
                             connection.Open();
-                            string sql = @"BACKUP DATABASE belwestDB TO DISK = '" + directoryname +
-                                         @"\belwestDB.bak'";
-                            SqlCommand command = new SqlCommand(sql, connection);
-                            var c = command.ExecuteNonQuery();
+                            string getDBsCommandStr = "select name from master.sys.databases";
+                            SqlCommand getDbsCommand = new SqlCommand(getDBsCommandStr, connection);
+                            var READER = getDbsCommand.ExecuteReader();
+                            List<string> listDB = new List<string>();
+                            while (READER.Read())
+                            {
+                                listDB.Add(READER.GetString(0));
+                            }
 
+                            listDB.Remove("tempdb");
+                            READER.Close();
+                            foreach (var item in listDB)
+                            {
+                                string sql = string.Format(@"BACKUP DATABASE {0} TO DISK = '" + directoryname +
+                                                           @"\{0}.bak'", item);
+                                SqlCommand command = new SqlCommand(sql, connection);
+                                var c = command.ExecuteNonQuery();
+                            }
                         }
                     }
                 }
-                catch (Exception e)
+                catch (Exception ex)
                 {
                     string data = directoryname + @"\err_log.txt";
                     var h = File.Open(data, FileMode.OpenOrCreate);
                     StreamWriter str = new StreamWriter(h);
-                    str.WriteLine(e.Message);
+                    str.WriteLine(ex.Message);
                     str.Close();
                 }
             }
@@ -87,7 +95,7 @@ namespace SQLBackUpService
         public void start()
         {
             TimerCallback tm = new TimerCallback(addToDirectory);
-            System.Threading.Timer timer = new System.Threading.Timer(tm, 0, 0, 2000);
+            Timer timer = new Timer(tm, 0, 0, 2000);
         }
     }
 }
