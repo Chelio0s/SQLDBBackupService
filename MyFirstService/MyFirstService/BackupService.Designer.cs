@@ -1,6 +1,6 @@
 ﻿namespace SQLBackUpService
 {
-    partial class Service1
+    partial class BackupService
     {
         private System.ComponentModel.IContainer components = null;
 
@@ -18,7 +18,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            this.ServiceName = "Service1";
+            this.ServiceName = "BackupService";
         }
 
     }

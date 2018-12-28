@@ -7,8 +7,8 @@
     <ProjectGuid>{239255B0-6789-4F59-91DF-2B0B2343E141}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MyFirstService</RootNamespace>
-    <AssemblyName>MyFirstService</AssemblyName>
+    <RootNamespace>SQLBackUpService</RootNamespace>
+    <AssemblyName>SQLBackUpService</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -57,11 +57,11 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="Service1.cs">
+    <Compile Include="BackupService.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Service1.Designer.cs">
-      <DependentUpon>Service1.cs</DependentUpon>
+    <Compile Include="BackupService.Designer.cs">
+      <DependentUpon>BackupService.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

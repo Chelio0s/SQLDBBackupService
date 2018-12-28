@@ -17,7 +17,7 @@ namespace SQLBackUpService
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[] 
             { 
-                new Service1() 
+                new BackupService() 
             };
             ServiceBase.Run(ServicesToRun);
         }

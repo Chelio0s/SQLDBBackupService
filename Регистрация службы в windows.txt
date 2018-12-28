@@ -1,0 +1,2 @@
+Power-Shell
+New-Service -Name SQLBackUpService -BinaryPathName C:\Services\SQLBackUpService.exe -DisplayName "SQLBackUpService" -Description "Служба создания бэкапа для всех баз MS SQL" -StartupType auto

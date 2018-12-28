@@ -4,14 +4,14 @@ using System.ServiceProcess;
 using System.IO;
 using System.Data.SqlClient;
 using System.Threading;
-using MyFirstService.Properties;
+using SQLBackUpService.Properties;
 
 
 namespace SQLBackUpService
 {
-    public partial class Service1 : ServiceBase
+    public partial class BackupService : ServiceBase
     {
-        public Service1()
+        public BackupService()
         {
             InitializeComponent();
             this.CanStop = true;
@@ -21,8 +21,8 @@ namespace SQLBackUpService
 
         protected override void OnStart(string[] args)
         {
-           MyServiceClass msc = new MyServiceClass();
-           Thread mscThread = new Thread(new ThreadStart(msc.start));
+           ServiceClass msc = new ServiceClass();
+           Thread mscThread = new Thread(new ThreadStart(msc.StartTimer));
            mscThread.Start();
         }
 
@@ -32,18 +32,19 @@ namespace SQLBackUpService
         }
     }
 
-    class MyServiceClass
+    class ServiceClass
     {
-        private void addToDirectory(object obj)
+        private void AddToDirectory(object obj)
         {
             var dtn = DateTime.Now;
-            if (dtn.Hour==12 && dtn.Minute<=15)
-            {       string path= Settings.Default.path;
-                    string userid = Settings.Default.UserId;
-                    string pas = Settings.Default.Password;
-                    string dbname = Settings.Default.DBName;
-                    string serverename = Settings.Default.ServerName;
-                    string directoryname = path + @"\" + "backup" + "_" + DateTime.Today.ToString().Split(' ')[0];
+            if (dtn.Hour == 12 && dtn.Minute <= 20)
+            {
+                string path = Settings.Default.path;
+                string userid = Settings.Default.UserId;
+                string pas = Settings.Default.Password;
+                string dbname = Settings.Default.DBName;
+                string serverename = Settings.Default.ServerName;
+                string directoryname = path + @"\" + "backup" + "_" + DateTime.Today.ToString().Split(' ')[0];
 
                 if (!Directory.Exists(path))
                 {
@@ -55,7 +56,8 @@ namespace SQLBackUpService
                     {
                         Directory.CreateDirectory(directoryname);
                         string connect =
-                            String.Format(@"Data Source={0};Initial Catalog={1};Persist Security Info=True;User ID={2};Password={3}",
+                            String.Format(
+                                @"Data Source={0};Initial Catalog={1};Persist Security Info=True;User ID={2};Password={3}",
                                 serverename, dbname, userid, pas);
 
                         using (SqlConnection connection = new SqlConnection(connect))
@@ -81,21 +83,28 @@ namespace SQLBackUpService
                             }
                         }
                     }
+                    else CreateLog(directoryname, "Не удалось создать бэкап");
                 }
                 catch (Exception ex)
                 {
-                    string data = directoryname + @"\err_log.txt";
-                    var h = File.Open(data, FileMode.OpenOrCreate);
-                    StreamWriter str = new StreamWriter(h);
-                    str.WriteLine(ex.Message);
-                    str.Close();
+                    CreateLog(directoryname, ex.Message);
                 }
             }
         }
-        public void start()
+        public void StartTimer()
         {
-            TimerCallback tm = new TimerCallback(addToDirectory);
-            Timer timer = new Timer(tm, 0, 0, 2000);
+            TimerCallback tm = new TimerCallback(AddToDirectory);
+            System.Threading.Timer timer = new System.Threading.Timer(tm, 0, 0, 20000);
+        }
+
+        void CreateLog(string directoryname, string ex)
+        {
+            string data = directoryname + @"\err_log.txt";
+            var h = File.Open(data, FileMode.OpenOrCreate);
+            StreamWriter str = new StreamWriter(h);
+            str.WriteLine(ex);
+            str.Close();
         }
     }
 }
+
